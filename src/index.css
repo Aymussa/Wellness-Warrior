@@ -12,7 +12,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: azure;
 }
 
 /* Home background image */
@@ -48,12 +47,4 @@ header{
   background-color: #86e7b8;
   margin-top: 5px;
 }
-
-/* Home H1 Styling */
-.h1-home{
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-}
-
-/* Home H1 styling */
 
