@@ -17,7 +17,7 @@ function Home() {
             </p>
             <p className="p-home1  text-white mb-4"> Let's see how we can help you by taking our assessment:
         </p>
-        <Link to="/services" className="btn-1">
+        <Link to="/assessment" className="btn-1">
       Assessment
     </Link>
         </div>
