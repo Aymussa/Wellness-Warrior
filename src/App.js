@@ -4,7 +4,7 @@ import NavBar from './components/NavBar';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Services from './components/services/Services';
-import Assessment from './components/assessment/Assessment';
+import Assessment from '.components/assessment/Assessment';
 import Contact from './components/contact/Contact';
 import Footer from "./components/footer/Footer";
 import "./index.css"
@@ -24,7 +24,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
           {/* Define a route that will have descendant routes */}
-          <Route path='assessment' element={<Assessment />} />
+          <Route path="assessment" element={<Assessment />} />
           <Route path="contact/*" element={<Contact />} />
         </Routes>
       </div>
