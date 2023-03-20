@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import Services from './components/services/Services';
 import Contact from './components/contact/Contact';
+import Footer from "./components/footer/Footer";
 import "./index.css"
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="contact/*" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }

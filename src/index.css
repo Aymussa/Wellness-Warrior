@@ -12,12 +12,11 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: azure;
 }
 
 /* Home background image */
 .home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../public/images/bg2.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../public/images/bg4.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   height: calc(100vh - 25px);
@@ -47,16 +46,5 @@ header{
   width: 100%;
   background-color: #86e7b8;
   margin-top: 5px;
-}
-
-/* Home H1 Styling */
-.h1-home{
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-}
-
-/* Home H1 styling */
-.h1-span{
-  color: #116259
 }
 
