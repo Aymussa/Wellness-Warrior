@@ -47,4 +47,9 @@ header{
   background-color: #86e7b8;
   margin-top: 5px;
 }
+/* NavItem Font Styling */
+.nav-item{
+  font-weight: 500;
+  font-size: 18px;
+ }
 
