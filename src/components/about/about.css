@@ -1,23 +1,48 @@
-.title{
+.AboutTitle {
 
-    background-color: blueviolet;
+    font: blue;
+
+
+}
+
+.h1-about {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-weight: bold;
     color: blue;
-    
-    
-    
-    }
-    
-    .h1-about {
-        font-family: "Raleway", sans-serif;
-        font-weight: 900;
-        font-weight: bold;
-        color:  blue;
-    }
-    
-    .h1-about{
-        font-size: 30px;
-        font-weight: bold;
-        color:  blue;
-    }
-    
+}
 
+.h1-about {
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+
+}
+
+
+.Mylady1 {
+    border-radius: 8px;
+    
+}
+
+
+
+.Mylady2 {
+    border-radius: 8px;
+    
+}
+
+
+
+
+.Mylady3 {
+
+    border-radius: 8px;
+    
+}
+
+
+.ManImage {
+    border-radius: 8px;
+    
+}
