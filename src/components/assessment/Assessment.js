@@ -1,24 +1,60 @@
-import React from "react";
+
+import React, { useState } from 'react';
+
+// React useState components for questions.
+const Assessment = () => {
+  const [selections, setSelections] = useState({});
+  const [totalScore, setTotalScore] = useState(0);
+  const [advice, setAdvice] = useState('');
+
+  // Questions
+  const questions = [
+    {
+      question: 'Q1: How are you feeling overall?',
+      choices: ["I'm feeling okay", "I'm not doing so well", "I'm feeling a bit stressed/tired/anxious"]
+    },
+    {
+      question: 'Q2: Have you been experiencing any changes in your mood or behavior recently?',
+      choices: ["I dont know", 'Maybe', 'Yes', 'No']
+    },
+    {
+      question: 'Q3: Have you been feeling particularly stressed or anxious lately?',
+      choices: ['Sometimes', 'No', 'Yes']
+    },
+    {
+      question: 'Q4: Are you having any trouble sleeping or experiencing changes in your sleep patterns?',
+      choices: ['Sometimes', 'No', 'Yes']
+    },
+    {
+      question: 'Q5: Have you been feeling tired or fatigued lately?',
+      choices: ['Sometimes', 'No', 'Yes']
+    },
+    {
+      question: 'Q6: Have you noticed any changes in your appetite or weight?',
+      choices: ['I dont know', 'No', 'Yes']
+    },
+    {
+      question: 'Q7: Have you been experiencing any physical symptoms that might be related to your mental health, such as headaches or stomach aches?',
+      choices: ['Not Sure', 'No', 'Yes']
+    },
+    {
+      question: 'Q8: Have you been feeling particularly stressed or anxious lately?',
+      choices: ['Sometimes', 'No', 'Yes']
+    },
+    {
+      question: 'Q9: Have you been experiencing any difficulties with relationships or interpersonal communication?',
+      choices: ['Not Sure', 'No', 'Yes']
+    },
+    {
+      question: 'Q10:  Have you been using any substances to cope with your emotions or mental health?',
+      choices: ['No', 'Yes']
+    }
+   
+  ];
+
+ 
 
 
-function Assessment() {
-  return (
-    <div className="pt-24">
-      <h1>Assessment</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula. Curabitur pellentesque
-        turpis sit amet eros iaculis, a mollis arcu dictum. Ut vel ante eget massa ornare placerat.
-        Etiam nisl orci, finibus sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum
-        nunc, sed pretium risus rutrum eget. Nam consequat, ligula in faucibus vestibulum, nisi
-        justo laoreet risus, luctus luctus mi lacus sit amet libero. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Mauris pretium condimentum
-        tellus eget lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec
-        placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum in velit pellentesque
-        vehicula sit amet at augue. Maecenas aliquam bibendum congue. Pellentesque semper, lectus
-        non ullamcorper iaculis, est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
-    </div>
-  );
+
+
 }
-
-export default Assessment;
