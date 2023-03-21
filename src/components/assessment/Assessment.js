@@ -75,13 +75,13 @@ const handleSubmit = (event) => {
   // a user makes and increment it by a number of times.
   // 
   Object.values(selections).forEach((choice) => {
-    if (choice === 'Choice A') {
+    if (choice === 1) {
       score += 1;
-    } else if (choice === 'Choice B') {
+    } else if (choice === 2) {
       score += 2;
-    } else if (choice === 'Choice C') {
+    } else if (choice === 3) {
       score += 3;
-    } else if (choice === 'Choice D') {
+    } else if (choice === 4) {
       score += 4;
     }
   });
