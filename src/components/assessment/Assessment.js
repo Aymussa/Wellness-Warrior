@@ -1,7 +1,6 @@
 
 import React from "react";
 
-
 function Assessment() {
   return (
     <div className="pt-24">

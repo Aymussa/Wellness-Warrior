@@ -1,13 +1,23 @@
-.home{
-    background-color: red;
-}
-
 .title{
 
-background-color: blueviolet;
-color: blue;
+    background-color: blueviolet;
+    color: blue;
+    
+    
+    
+    }
+    
+    .h1-about {
+        font-family: "Raleway", sans-serif;
+        font-weight: 900;
+        font-weight: bold;
+        color:  blue;
+    }
+    
+    .h1-about{
+        font-size: 30px;
+        font-weight: bold;
+        color:  blue;
+    }
+    
 
-
-
-
-}
