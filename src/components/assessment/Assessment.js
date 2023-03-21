@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import "./assessment.css"
 
 // React useState components for questions.
 const Assessment = () => {
@@ -75,20 +76,77 @@ const handleSubmit = (event) => {
   // a user makes and increment it by a number of times.
   // 
   Object.values(selections).forEach((choice) => {
-    if (choice === 1) {
+    if (choice === 'Yes') {
       score += 1;
-    } else if (choice === 2) {
+    } else if (choice === "No") {
       score += 2;
-    } else if (choice === 3) {
+    } else if (choice === "Maybe") {
       score += 3;
-    } else if (choice === 4) {
+    } else if (choice === "I dont know") {
       score += 4;
     }
   });
 // Update the totalScore state based on the choices a user makes.
   setTotalScore(score);
 
+// Advice card to return advice content depending on the score from the questions user selects
+const adviceCard = [
+  {
+    score: 10,
+    text: 'Advice for total score of 10'
+  },
+  {
+    score: 30,
+    text: 'Advice for total score of 30'
+  },
+  {
+    score: 50,
+    text: 'Advice for total score of 50'
+  }
+  // Check if the result of find() is null or undefined and then return an empty string
+].find((advice) => score <= advice.score)?.text ?? '';
+
+setAdvice(adviceCard);
+console.log(adviceCard)
+console.log(totalScore)
 
 };
-}
+
+
+// renders a form with a list of questions and checkboxes for each question
+return (
+  <div className='assessment-pg h-full pt-30'>
+    <form onSubmit={handleSubmit}>
+      {questions.map((question) => (
+        <div key={question.question}>
+          <h3>{question.question}</h3>
+          {question.choices.map((choice) => (
+            <div key={choice}>
+              <label>
+                <input
+                  type="checkbox"
+                  name={question.question}
+                  value={choice}
+                  checked={selections[question.question] === choice}
+                  onChange={handleCheckbox}
+                />
+                {choice}
+              </label>
+            </div>
+          ))}
+        </div>
+      ))}
+      <button type="submit">Submit</button>
+    </form>
+    {/* If totalScore is greater than 0, then return the number of score and advice */}
+    {totalScore > 0 && (
+      <div>
+        <p>Total score: {totalScore}</p>
+        <p>{advice}</p>
+      </div>
+    )}
+  </div>
+);
+};
+
 export default Assessment;

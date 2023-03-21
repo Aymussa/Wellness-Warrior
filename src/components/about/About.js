@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import ReactDOM from 'react-dom';
-import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+// import ReactDOM from 'react-dom';
+// import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 import "./about.css"
 // import logo from "../images/logo.jpg.";
 
