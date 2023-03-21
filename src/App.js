@@ -10,6 +10,9 @@ import Contact from './components/contact/Contact';
 import Footer from "./components/footer/Footer";
 import "./index.css"
 
+
+
+
 function App() {
   return (
     <Router>
