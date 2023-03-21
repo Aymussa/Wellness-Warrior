@@ -52,9 +52,43 @@ const Assessment = () => {
    
   ];
 
- 
+// Check checkbox is user ticked the box
+  const handleCheckbox = (event) => {
+    const question = event.target.name;
+    const choice = event.target.value;
+
+// Update selection of choice
+    setSelections((prevSelections) => ({
+      ...prevSelections,
+      [question]: choice
+    }));
+  };
+
+// Hnadle submit for when user submits the form
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+// Score variable to increment the choice selection
+  let score = 0;
+
+  //  Object.values function to iterates over each value in the selections state by the choices
+  // a user makes and increment it by a number of times.
+  // 
+  Object.values(selections).forEach((choice) => {
+    if (choice === 'Choice A') {
+      score += 1;
+    } else if (choice === 'Choice B') {
+      score += 2;
+    } else if (choice === 'Choice C') {
+      score += 3;
+    } else if (choice === 'Choice D') {
+      score += 4;
+    }
+  });
+// Update the totalScore state based on the choices a user makes.
+  setTotalScore(score);
 
 
-
-
+};
 }
+export default Assessment;
