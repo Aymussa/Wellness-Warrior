@@ -1,23 +1,69 @@
-.title{
+.AboutTitle {
 
-    background-color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+
+
+}
+
+
+.About {
+
     color: blue;
-    
-    
-    
-    }
-    
-    .h1-about {
-        font-family: "Raleway", sans-serif;
-        font-weight: 900;
-        font-weight: bold;
-        color:  blue;
-    }
-    
-    .h1-about{
-        font-size: 30px;
-        font-weight: bold;
-        color:  blue;
-    }
-    
 
+
+}
+
+
+.grid {
+
+    background-color: 		#00DDFF
+
+
+}
+
+
+
+.h1-about {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-weight: bold;
+    color: blue;
+}
+
+.h2-about {
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+
+}
+
+
+.Mylady1 {
+    border-radius: 8px;
+    
+}
+
+
+
+.Mylady2 {
+    border-radius: 8px;
+    
+}
+
+
+
+
+.Mylady3 {
+
+    border-radius: 8px;
+    
+}
+
+
+.ManImage {
+    border-radius: 8px;
+    
+}

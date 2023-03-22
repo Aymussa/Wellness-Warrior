@@ -2,11 +2,14 @@ import React from "react";
 // import ReactDOM from 'react-dom';
 // import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 import "./about.css"
-// import logo from "../images/logo.jpg.";
+let man1 = "/images/man1.jpg";
+let lady1 = "/images/lady1.jpg";
+let lady2 = "/images/lady2.jpg";
+let lady3 = "/images/lady3.jpg";
 
 function About() {
   return (
-    <div className= "About pt-24">
+    <div className="About pt-24">
       <h1 className="h1-about pt-24">About Us</h1>
       <p>
         Wellness Warrior is a well being app that is designed to help users cope with stress, anxiety, depression, and other mental health conditions.
@@ -34,43 +37,67 @@ function About() {
         <li>
           Support groups: The app can connect users with support groups or communities of people who are dealing with similar mental health challenges.</li>
       </ul>
-      <br></br>
+ 
 
       <h2 className="h2-about pt-24">Meet the Team</h2>
       <br></br>
-    
-    {/* meet the team section */}
+
+      {/* meet the team section */}
 
       <div class="grid grid-cols-4 gap-4">
-      <div class="border border-gray-500 p-4" title = "Ahmed"> Ahmed
-      <br></br>
-           {/* <img src= {mylogo} alt="Ahmed photo" width="600" height="400"></img> */}
+        <div class="border border-gray-500 p-4" AboutTitle="Ahmed"> Ahmed
+          <br></br>
+
           <p>Bootcamp Project 2023</p>
-          <p> Meditation expert consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-        <div class="border border-gray-500 p-4" title = "Jessica"> Jessica
-        <br></br>
-            <p>Bootcamp Project 2023</p>
-            <p> Yoga World guru, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-
-        <div class="border border-gray-500 p-4" title = "Laly"> 
-        <br></br>
-          Laly <p>Bootcamp Project 2023</p>
-          <p> Palate World Expert , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          <img
+            src={process.env.PUBLIC_URL + man1}
+            alt="man"
+            width={"60%"}
+            className="ManImage"
+          />
+          <p> Meditation expert consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        <div class="border border-gray-500 p-4" title = "Abby">
-        <br></br> 
-          Abby<p>Bootcamp Project 2023</p>
+
+        <div class="border border-gray-500 p-4" AboutTitle="Jessica"> Jessica
+          <br></br>
+          <p>Bootcamp Project 2023</p>
+          <img
+            src={process.env.PUBLIC_URL + lady1}
+            alt="lady1"
+            width={"60%"}
+            className="MyLady1"
+          />
+          <p> Yoga World guru, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <div class="border border-gray-500 p-4" AboutTitle="Laly"> Laly
+          <br></br>
+        <p>Bootcamp Project 2023</p>
+          <img
+            src={process.env.PUBLIC_URL + lady2}
+            alt="lady2"
+            width={"60%"}
+            className="MyLady2"
+          />
+          <p> Palate World Expert  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="border border-gray-500 p-4" AboutTitle="Abby">Abby
+          <br></br>
+          <p>Bootcamp Project 2023</p>
+          <img
+            src={process.env.PUBLIC_URL + lady3}
+            alt="lady3"
+            width={"60%"}
+            className="MyLady3"
+          />
           <p> Well being Specialist sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
         </div>
-        </div> 
+      </div>
     </div>
 
   );
