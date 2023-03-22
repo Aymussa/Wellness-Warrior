@@ -57,7 +57,6 @@ const Assessment = () => {
   const handleCheckbox = (event) => {
     const question = event.target.name;
     const choice = event.target.value;
-
 // Update selection of choice
     setSelections((prevSelections) => ({
       ...prevSelections,
@@ -75,8 +74,9 @@ const handleSubmit = (event) => {
   //  Object.values function to iterates over each value in the selections state by the choices
   // a user makes and increment it by a number of times.
   // 
-  Object.values(selections).forEach((choice) => {
-    if (choice === 'Yes') {
+  Object.values(selections).forEach((choice, i) => {
+    console.log(choice);
+    if (choice === questions[i].choices.indexOf(choice)) {
       score += 1;
     } else if (choice === "No") {
       score += 2;
