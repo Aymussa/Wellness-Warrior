@@ -99,8 +99,11 @@ function Home() {
               </div>
             </div>
           </div>
+          <h3>Features</h3>
         </div>
+        
       </section>
+
       <section class="quote-section">
         <div className="quote-text">
         <h3 class="text-center font-semibold text-[19px]">
