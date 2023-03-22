@@ -16,7 +16,7 @@
 }
 
 .child1{
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/public/images/contact-page.jpeg");
     background-size:cover;
     display:flex;
     flex-direction:column;
