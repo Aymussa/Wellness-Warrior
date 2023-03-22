@@ -15,11 +15,11 @@ body {
 }
 
 /* Home background image */
-.home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../public/images/bg4.jpeg");
+.jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./components/images/bg4.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh - 25px);
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +44,7 @@ header{
   display: block;
   height: 2px;
   width: 100%;
-  background-color: #86e7b8;
+  background-color: #219ebc;
   margin-top: 5px;
 }
 /* NavItem Font Styling */
