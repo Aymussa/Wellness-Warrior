@@ -47,6 +47,14 @@ header{
   background-color: #219ebc;
   margin-top: 5px;
 }
+/* Navlink Font Styling */
+.nav-sub{
+  font-weight: 500;
+  font-size: 18px;
+  position: fixed;
+
+}
+
 /* NavItem Font Styling */
 .nav-item{
   font-weight: 500;
