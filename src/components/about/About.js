@@ -44,8 +44,8 @@ function About() {
 
       {/* meet the team section */}
 
-      <div class="grid grid-cols-4 gap-4">
-        <div class="border border-gray-500 p-4" AboutTitle="Ahmed"> Ahmed
+      <div className="grid grid-cols-4 gap-4">
+        <div className="border border-gray-500 p-4 Ahmed"> Ahmed
           <br></br>
 
           <p>Bootcamp Project 2023</p>
@@ -59,7 +59,7 @@ function About() {
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
 
-        <div class="border border-gray-500 p-4" AboutTitle="Jessica"> Jessica
+        <div className="border border-gray-500 p-4 Jessie"> Jessie
           <br></br>
           <p>Bootcamp Project 2023</p>
           <img
@@ -72,7 +72,7 @@ function About() {
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
 
-        <div class="border border-gray-500 p-4" AboutTitle="Laly"> Laly
+        <div className="border border-gray-500 p-4 Laly"> Laly
           <br></br>
         <p>Bootcamp Project 2023</p>
           <img
@@ -84,7 +84,7 @@ function About() {
           <p> Palate World Expert  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        <div class="border border-gray-500 p-4" AboutTitle="Abby">Abby
+        <div className="border border-gray-500 p-4 Abby">Abby
           <br></br>
           <p>Bootcamp Project 2023</p>
           <img
