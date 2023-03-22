@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
@@ -8,6 +9,7 @@ import Assessment from './components/assessment/Assessment';
 import Contact from './components/contact/Contact';
 import Footer from "./components/footer/Footer";
 import "./index.css"
+
 
 
 
@@ -27,12 +29,10 @@ function App() {
           <Route path="services/assessment" element={<Assessment />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
-    
-          <Footer />
     </Router>
   );
 }
 
 export default App;
-

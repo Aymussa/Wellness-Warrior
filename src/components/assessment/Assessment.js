@@ -1,25 +1,152 @@
 
-import React from "react";
+import React, { useState } from 'react';
+import "./assessment.css"
+
+// React useState components for questions.
+const Assessment = () => {
+  const [selections, setSelections] = useState({});
+  const [totalScore, setTotalScore] = useState(0);
+  const [advice, setAdvice] = useState('');
+
+  // Questions
+  const questions = [
+    {
+      question: 'Q1: How are you feeling overall?',
+      choices: ["I'm feeling okay", "I'm not doing so well", "I'm feeling a bit stressed/tired/anxious"]
+    },
+    {
+      question: 'Q2: Have you been experiencing any changes in your mood or behavior recently?',
+      choices: ["I dont know", 'Maybe', 'Yes', 'No']
+    },
+    {
+      question: 'Q3: Have you been feeling particularly stressed or anxious lately?',
+      choices: ['Sometimes', 'No', 'Yes']
+    },
+    {
+      question: 'Q4: Are you having any trouble sleeping or experiencing changes in your sleep patterns?',
+      choices: ['Sometimes', 'No', 'Yes']
+    },
+    {
+      question: 'Q5: Have you been feeling tired or fatigued lately?',
+      choices: ['Sometimes', 'No', 'Yes']
+    },
+    {
+      question: 'Q6: Have you noticed any changes in your appetite or weight?',
+      choices: ['I dont know', 'No', 'Yes']
+    },
+    {
+      question: 'Q7: Have you been experiencing any physical symptoms that might be related to your mental health, such as headaches or stomach aches?',
+      choices: ['Not Sure', 'No', 'Yes']
+    },
+    {
+      question: 'Q8: Have you been feeling particularly stressed or anxious lately?',
+      choices: ['Sometimes', 'No', 'Yes']
+    },
+    {
+      question: 'Q9: Have you been experiencing any difficulties with relationships or interpersonal communication?',
+      choices: ['Not Sure', 'No', 'Yes']
+    },
+    {
+      question: 'Q10:  Have you been using any substances to cope with your emotions or mental health?',
+      choices: ['No', 'Yes']
+    }
+   
+  ];
+
+// Check checkbox is user ticked the box
+  const handleCheckbox = (event) => {
+    const question = event.target.name;
+    const choice = event.target.value;
+
+// Update selection of choice
+    setSelections((prevSelections) => ({
+      ...prevSelections,
+      [question]: choice
+    }));
+  };
+
+// Hnadle submit for when user submits the form
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+// Score variable to increment the choice selection
+  let score = 0;
+
+  //  Object.values function to iterates over each value in the selections state by the choices
+  // a user makes and increment it by a number of times.
+  // 
+  Object.values(selections).forEach((choice) => {
+    if (choice === 'Yes') {
+      score += 1;
+    } else if (choice === "No") {
+      score += 2;
+    } else if (choice === "Maybe") {
+      score += 3;
+    } else if (choice === "I dont know") {
+      score += 4;
+    }
+  });
+// Update the totalScore state based on the choices a user makes.
+  setTotalScore(score);
+
+// Advice card to return advice content depending on the score from the questions user selects
+const adviceCard = [
+  {
+    score: 10,
+    text: 'Advice for total score of 10'
+  },
+  {
+    score: 30,
+    text: 'Advice for total score of 30'
+  },
+  {
+    score: 50,
+    text: 'Advice for total score of 50'
+  }
+  // Check if the result of find() is null or undefined and then return an empty string
+].find((advice) => score <= advice.score)?.text ?? '';
+
+setAdvice(adviceCard);
+console.log(adviceCard)
+console.log(totalScore)
+
+};
 
 
-function Assessment() {
-  return (
-    <div className="pt-24">
-      <h1>Assessment</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula. Curabitur pellentesque
-        turpis sit amet eros iaculis, a mollis arcu dictum. Ut vel ante eget massa ornare placerat.
-        Etiam nisl orci, finibus sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum
-        nunc, sed pretium risus rutrum eget. Nam consequat, ligula in faucibus vestibulum, nisi
-        justo laoreet risus, luctus luctus mi lacus sit amet libero. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Mauris pretium condimentum
-        tellus eget lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec
-        placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum in velit pellentesque
-        vehicula sit amet at augue. Maecenas aliquam bibendum congue. Pellentesque semper, lectus
-        non ullamcorper iaculis, est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
-    </div>
-  );
-}
+// renders a form with a list of questions and checkboxes for each question
+return (
+  <div className='assessment-pg h-full pt-30'>
+    <form onSubmit={handleSubmit}>
+      {questions.map((question) => (
+        <div key={question.question}>
+          <h3>{question.question}</h3>
+          {question.choices.map((choice) => (
+            <div key={choice}>
+              <label>
+                <input
+                  type="checkbox"
+                  name={question.question}
+                  value={choice}
+                  checked={selections[question.question] === choice}
+                  onChange={handleCheckbox}
+                />
+                {choice}
+              </label>
+            </div>
+          ))}
+        </div>
+      ))}
+      <button type="submit">Submit</button>
+    </form>
+    {/* If totalScore is greater than 0, then return the number of score and advice */}
+    {totalScore > 0 && (
+      <div>
+        <p>Total score: {totalScore}</p>
+        <p>{advice}</p>
+      </div>
+    )}
+  </div>
+);
+};
 
 export default Assessment;
