@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-let Logo = "/images/logo.png";
+import Logo from "./images/logo.png"
+
+
 
 function NavBar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -13,7 +15,7 @@ function NavBar() {
       <header className="fixed w-full px-4 lg:px-100 z-30 lg:h-140 flex items-center bg-white">
         <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
           <img
-            src={process.env.PUBLIC_URL + Logo}
+            src={Logo}
             alt="logo"
             width={"12%"}
             className="mylogo"
