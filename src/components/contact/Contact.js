@@ -1,30 +1,103 @@
-import React from 'react';
-import { Link} from 'react-router-dom';
-
+import React, { useState } from 'react';
+import './contact.css';
 
 function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(email)
+    // handle form submission here
+  }
+
   return (
-    <div className="pt-24">
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-      <Link to="learn" role="button" className="btn btn-link">
-        Learn More
-      </Link>
-      <Link to="contact" role="button" className="btn btn-link">
-        Learn Less
-      </Link>
+    <div>
+      <div className="container h-full pt-24">
+        <div className="contact-parent">
+          <div className="contact-child child1">
+            <p>
+              <i className="fas fa-map-marker-alt"></i> Address <br />
+              <span> 9-Wellness Warrior
+                <br />
+                London, UK
+              </span>
+            </p>
+
+            <p>
+              <i className="fas fa-phone-alt"></i> Let's Talk <br />
+              <span> 0787878787</span>
+            </p>
+
+            <p>
+              <i className=" far fa-envelope"></i> General Support <br />
+              <span>example@wellness.co.uk</span>
+            </p>
+          </div>
+
+          <div className="contact-child child2">
+            <div className="inside-contact">
+              <h2>Contact Us</h2>
+              <h3>
+                <span id="confirm"></span>
+              </h3>
+
+              <form onSubmit={handleSubmit}>
+                <p>Name *</p>
+                <input 
+                  id="txt_name" 
+                  type="text" 
+                  required 
+                  value={name} 
+                  onChange={e => setName(e.target.value)}
+                />
+
+                <p>Email *</p>
+                <input 
+                  id="txt_email" 
+                  type="text" 
+                  required 
+                  value={email} 
+                  onChange={e => setEmail(e.target.value)}
+                />
+
+                <p>Phone *</p>
+                <input 
+                  id="txt_phone" 
+                  type="text" 
+                  required 
+                  value={phone} 
+                  onChange={e => setPhone(e.target.value)}
+                />
+
+                <p>Subject *</p>
+                <input 
+                  id="txt_subject" 
+                  type="text" 
+                  required 
+                  value={subject} 
+                  onChange={e => setSubject(e.target.value)}
+                />
+
+                <p>Message *</p>
+                <textarea 
+                  id="txt_message" 
+                  rows="4" 
+                  cols="20" 
+                  required 
+                  value={message} 
+                  onChange={e => setMessage(e.target.value)}
+                ></textarea>
+
+                <input type="submit" id="btn_send" value="SEND" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
