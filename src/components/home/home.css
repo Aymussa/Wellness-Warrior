@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Philosopher:ital,wght@0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Poppins:wght@300;400;500&family=Raleway:wght@700;900&display=swap");
 
-
-.home-content{
+.home-content {
   display: relative;
 }
 
@@ -27,21 +26,21 @@
 .btn-1 {
   width: 120px;
   line-height: 42px;
-  
+
   border: none;
   background-color: rgb(255, 255, 255);
   border-radius: 4px;
 }
 
 .bnt-1:hover {
-  background-color:rgb(55, 206, 226);
+  background-color: rgb(55, 206, 226);
   color: #fff;
 }
 
 .h2-subtitle {
   font-size: 40px;
   color: #073b4c;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin: 0;
   position: relative;
@@ -91,14 +90,14 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   height: 100%;
-  
+
   filter: saturate(55%);
 }
 .blog .blog-item-inner:hover .blog-img img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 
-filter: saturate(130%);
+  filter: saturate(130%);
 }
 .blog .blog-item-inner .blog-img .blog-title1 {
   position: absolute;
@@ -118,7 +117,7 @@ filter: saturate(130%);
 .blog .blog-item-inner .blog-info .blog-title {
   font-size: 18px;
   font-weight: 700;
-  color: #302e4d;
+  color: #000000;
   text-transform: capitalize;
   margin-bottom: 10px;
 }
@@ -132,7 +131,7 @@ filter: saturate(130%);
 .blog .blog-item-inner .blog-info .blog-tags {
   font-size: 14px;
   line-height: 25px;
-  color: #504e70;
+  color: #000000;
   font-weight: 400;
   text-transform: capitalize;
 }
@@ -142,7 +141,7 @@ filter: saturate(130%);
   color: black;
 }
 
-.quote-section{
+.quote-section {
   background-image: url("../images/palm.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -150,8 +149,8 @@ filter: saturate(130%);
   display: fixed;
 }
 
-.quote-text{
- padding-top: 5rem;
+.quote-text {
+  padding-top: 5rem;
   text-align: center;
   font-family: "Raleway", sans-serif;
 }

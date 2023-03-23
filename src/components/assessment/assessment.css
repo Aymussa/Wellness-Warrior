@@ -1,31 +1,29 @@
-.assessH1{
-    font-family: "Raleway", sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    color: #244C4Eff;
+.assessH1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #244c4eff;
 }
-  
-  input[type="checkbox"] {
-    margin-right: 6px;
-    transform: translateY(2px);
-  }
-  
-  button {
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #3E656Aff;
-    margin-top: 20px;
-    margin-bottom: 4px;
-    padding: 10px 16px;
-    border-radius: 4px;
-    background-color: #fff;
-    border: 2px solid #3E656Aff;
-    width: 80px;
-    
-  }
-  
-  button:hover {
-    background-color:rgb(22, 137, 152);
-    color: #fff;
-  }
-  
+
+input[type="checkbox"] {
+  margin-right: 6px;
+  transform: translateY(2px);
+}
+
+button {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #3e656aff;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 2px solid #3e656aff;
+  width: 80px;
+}
+
+button:hover {
+  background-color: rgb(22, 137, 152);
+  color: #fff;
+}
