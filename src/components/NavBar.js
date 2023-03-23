@@ -10,7 +10,7 @@ function NavBar() {
   }
 
   return (
-    <header className="fixed w-full px-4 lg:px-100 z-30 lg:h-140 flex items-center bg-white">
+    <header className="sticky top-0 w-full px-4 lg:px-100 z-[99] lg:h-140 flex items-center bg-white">
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         <img
           src={process.env.PUBLIC_URL + Logo}

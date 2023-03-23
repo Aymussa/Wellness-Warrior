@@ -3,7 +3,7 @@
   
   .h1-services {
     max-width: 1500px;
-    padding-top: 10rem;
+    padding-top: 1rem;
     text-align:center;
     font-family: "Raleway", sans-serif;
     font-size: 40px;
@@ -13,8 +13,9 @@
   
 
   .p-services {
-    padding-top: 3rem;
-    text-align: center;
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+	font-weight: 700;
   }
   
   .ul-services {
@@ -97,7 +98,13 @@ label{
 	font-weight: 500;
 }
 
-
+.bg-services{
+	background-image: url("../images/palm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  display: fixed;
+}
   
 
 @media only screen and (max-width: 860px) {

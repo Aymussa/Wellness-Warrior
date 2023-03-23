@@ -11,26 +11,28 @@ function Services() {
   return (
     <div >
       <h1 className="h1-services">Welcome to our Services</h1>
-      <p className="p-services">This Wellness Warrior app is designed to provide you with a variety of services to help you improve your overall health and well-being. Our services include:</p>
+      <p className="p-services">Wellness Warrior is designed to provide you with a variety of services to help you improve your overall health and well-being. Our services include:</p>
       <div ClassName="ul-services">
-        <ul  >
-          <li>Lifestyle coaching: Our lifestyle coaches provide guidance and support to help you make positive changes in your daily routine, including improving sleep habits, managing stress, and establishing healthy routines.</li>
-          <li>Health diet planning: Our nutritionists will work with you to create a customised meal plan based on your goals and preferences. We also offer a recipe library with healthy and delicious options.</li>
-          <li>Exercise and yoga: Our app offers a range of exercise and yoga routines, from gentle stretching to high-intensity workouts. Instructors provide step-by-step guidance to help you get the most out of your practice.</li>
-          <li>Breathing techniques: Our app features a variety of breathing exercises to help you reduce stress and improve focus. Instructors will guide you through different techniques such as deep breathing and alternate nostril breathing.</li>
-          <li>Meditation: Our meditation sessions are designed to help you relax and reduce stress. We offer guided meditations for beginners, as well as more advanced options for those with more experience.</li>
-          <li>Mindfulness: Our app offers daily mindfulness exercises to help you stay present and focused throughout the day.</li>
-          <li>Sleep coaching: Our sleep coaches provide tips and guidance to help you establish healthy sleep habits and improve the quality of your sleep.</li>
+        <ul className="pl-8 pr-8" >
+          <li className="mb-3 mt-3"><span className="font-semibold text-teal-600">Lifestyle coaching:</span> Our lifestyle coaches provide guidance and support to help you make positive changes in your daily routine, including improving sleep habits, managing stress, and establishing healthy routines.</li>
+          <li className="mb-3"><span className="font-semibold text-teal-600">Health diet planning:</span> Our nutritionists will work with you to create a customised meal plan based on your goals and preferences. We also offer a recipe library with healthy and delicious options.</li>
+          <li className="mb-3"><span className="font-semibold text-teal-600">Exercise and yoga:</span>  Our app offers a range of exercise and yoga routines, from gentle stretching to high-intensity workouts. Instructors provide step-by-step guidance to help you get the most out of your practice.</li>
+          <li className="mb-3"><span className="font-semibold text-teal-600">Breathing techniques:</span>  Our app features a variety of breathing exercises to help you reduce stress and improve focus. Instructors will guide you through different techniques such as deep breathing and alternate nostril breathing.</li>
+          <li className="mb-3"><span className="font-semibold text-teal-600">Meditation:</span>  Our meditation sessions are designed to help you relax and reduce stress. We offer guided meditations for beginners, as well as more advanced options for those with more experience.</li>
+          <li className="mb-3"><span className="font-semibold text-teal-600">Mindfulness:</span>  Our app offers daily mindfulness exercises to help you stay present and focused throughout the day.</li>
+          <li><span className="font-semibold text-teal-600">Sleep coaching:</span>  Our sleep coaches provide tips and guidance to help you establish healthy sleep habits and improve the quality of your sleep.</li>
         </ul>
-        <p className="p-services"> We are constantly adding new services and features to our app, so be sure to check back often!</p>
+        <p className="p-services font-bold text-center mb-12"> We are constantly adding new services and features to our site, so be sure to check back often!</p>
       </div>
-      <h1 className="formH1 font-semibold text-[19px] text-center pt-6">Find a place to workout!</h1>
+      <section className="bg-services"></section>
+      <h1 className="formH1 font-semibold text-[19px] text-center pt-8">Find a place to workout!</h1>
       <p className="text-center pt-2 ">To improve your physical health, utilize the form below to explore various types of fitness
        options nearby your chosen location.</p>
       <section className="pt-6 pl-7">
       <PlaceApi></PlaceApi>
       </section>
-      <h2 className="p-services font-semibold text-[18px]" >Testimonials:</h2>
+   
+      <h2 className="p-services font-semibold text-[20px] text-center" >Testimonials:</h2>
       <div class="testimonials">
         <ul>
           <li className="">

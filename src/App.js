@@ -25,7 +25,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
-          {/* Define a route that will have descendant routes */}
           <Route path="assessment" element={<Assessment />} />
           <Route path="contact" element={<Contact />} />
         </Routes>

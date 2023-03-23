@@ -11,30 +11,30 @@ function About() {
   return (
     <div className="About pt-24">
       <h1 className="h1-about pt-24">About Us</h1>
-      <p>
+      <p className=" text-black pt-6">
         Wellness Warrior is a well being app that is designed to help users cope with stress, anxiety, depression, and other mental health conditions.
         <p>The app was established in 2019 and has been very popular among people of all ages.</p>
       </p> <br></br>
 
-      <p>
+      <p className=" text-black pt-6">
         The app provides the followings:
       </p> <br></br>
 
       <ul>
-        <li>Guided meditations and relaxation exercises to help users reduce stress and anxiety.
+        <li className=" text-black pt-6">Guided meditations and relaxation exercises to help users reduce stress and anxiety.
         </li> <br></br>
 
-        <li>Mindfulness exercises: The app can offer mindfulness exercises to help users stay present and focused on the present moment.
+        <li className=" text-black pt-6">Mindfulness exercises: The app can offer mindfulness exercises to help users stay present and focused on the present moment.
         </li>
         <br></br>
-        <li>Journaling: The app can provide a digital journal for users to write about their feelings and experiences, helping them process emotions and identify negative thought patterns.</li>
+        <li className=" text-black pt-6">Journaling: The app can provide a digital journal for users to write about their feelings and experiences, helping them process emotions and identify negative thought patterns.</li>
         <br></br>
-        <li>Virtual therapy: The app can provide access to virtual therapy or counseling sessions, allowing users to get professional mental health support from the comfort of their own home.
+        <li className=" text-black pt-6">Virtual therapy: The app can provide access to virtual therapy or counseling sessions, allowing users to get professional mental health support from the comfort of their own home.
         </li>
         <br></br>
-        <li>Self-help resources: The app can provide articles, videos, and other resources on mental health topics, such as coping skills, stress management and self-care.</li>
+        <li className=" text-black pt-6">Self-help resources: The app can provide articles, videos, and other resources on mental health topics, such as coping skills, stress management and self-care.</li>
         <br></br>
-        <li>
+        <li className=" text-black pt-6">
           Support groups: The app can connect users with support groups or communities of people who are dealing with similar mental health challenges.</li>
       </ul>
  
