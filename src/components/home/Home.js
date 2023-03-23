@@ -17,12 +17,12 @@ function Home() {
           We're here to help you improve your physical fitness, manage stress
           and anxiety, or find peace and tranquility in your everyday life.
         </p>
-        <p className="p-home1  text-white mb-4">
+        <p className="p-home1  text-white mb-6">
           Let's see how we can help you by taking our assessment:
         </p>
 
-        <Link to="/assessment" className="btn-1">
-          Assessment
+        <Link to="/assessment">
+          <button className="btn-1 font-semibold text-[17px]">Assessment</button> 
         </Link>
       </div>
 

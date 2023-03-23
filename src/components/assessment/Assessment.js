@@ -118,7 +118,7 @@ return (
   <div className='assessment-pg pt-20'>
     <div className="pt-20 pl-14">
     <h1 className="assessH1 mb-6">Assessment</h1>
-    <form  onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       {questions.map((question) => (
         <div key={question.question}>
           <h3 className="font-semibold text-[19px]">{question.question}</h3>
@@ -138,7 +138,7 @@ return (
           ))}
         </div>
       ))}
-      <button className="font-semibold text-[19px] text-red-600 mb-4 mt-4" type="submit">Submit</button>
+      <button className="bnt2 font-semibold text-[19px] text-black mb-4 mt-4" type="submit">Submit</button>
     </form>
     {/* If totalScore is greater than 0, then return the number of score and advice */}
     {totalScore > 0 && (
