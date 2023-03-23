@@ -1,17 +1,13 @@
-
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import Home from './components/home/Home';
-import About from './components/about/About';
-import Services from './components/services/Services';
-import Assessment from './components/assessment/Assessment';
-import Contact from './components/contact/Contact';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Home from "./components/home/Home";
+import About from "./components/about/About";
+import Services from "./components/services/Services";
+import Assessment from "./components/assessment/Assessment";
+import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-import "./index.css"
-
-
-
+import "./index.css";
 
 function App() {
   return (

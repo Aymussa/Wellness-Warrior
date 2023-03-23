@@ -16,8 +16,8 @@ function Contact() {
 
   return (
     <div>
-      <div className="container pt-24">
-        <h1 className="ContactH pt-20">Contact Us</h1>
+      <div className="container">
+        <h1 className="ContactH">Contact Us</h1>
         <p className=" text-black pt-6">
           Please fill out our contact form if you have any inquiries or need
           additional details about our services.

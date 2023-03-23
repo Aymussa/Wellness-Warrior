@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import Logo from "./images/logo.png";
 
 function NavBar() {
@@ -24,9 +24,8 @@ function NavBar() {
               to="/"
               end
               className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
-              }
-            >
+                isActive ? "nav-link active" : "nav-link"
+              }>
               Home
             </NavLink>
           </li>
@@ -34,33 +33,32 @@ function NavBar() {
             <NavLink
               to="about"
               className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
-              }
-            >
+                isActive ? "nav-link active" : "nav-link"
+              }>
               About
             </NavLink>
           </li>
-          <li className="nav-item" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+          <li
+            className="nav-item"
+            onMouseEnter={toggleDropdown}
+            onMouseLeave={toggleDropdown}>
             <NavLink
               to="services"
               className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
+                isActive ? "nav-link active" : "nav-link"
               }>
               Services
             </NavLink>
             {isDropdownOpen && (
-              
-                <li className='nav-sub'>
-                  <NavLink
-                    to="/assessment"
-                    className={({ isActive }) =>
-                      isActive ? 'nav-link active' : 'nav-link'
-                    }
-                  >
-                    Assessment
-                  </NavLink>
-                </li>
-              
+              <li className="nav-sub">
+                <NavLink
+                  to="/assessment"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }>
+                  Assessment
+                </NavLink>
+              </li>
             )}
           </li>
           <li className="nav-item">
@@ -68,15 +66,12 @@ function NavBar() {
               to="contact"
               end
               className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
-              }
-            >
+                isActive ? "nav-link active" : "nav-link"
+              }>
               Contact
             </NavLink>
           </li>
         </ul>
-
-
       </div>
     </header>
   );

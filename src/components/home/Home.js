@@ -7,9 +7,9 @@ import EatingHealthy from "../images/healthy.jpeg";
 
 function Home() {
   return (
-    <div className="home pt-24">
+    <div className="home">
       <div className="jumbotron"></div>
-      <div className="home-content pt-36 container mx-auto absolute inset-8 text-left">
+      <div className="home-content pt-32 container mx-auto absolute inset-8 text-left">
         <h1 className="h1-home text-[85px] text-white">
           Wellness <br /> Warrior
         </h1>
@@ -22,7 +22,9 @@ function Home() {
         </p>
 
         <Link to="/assessment">
-          <button className="btn-1 font-semibold text-[17px]">Assessment</button> 
+          <button className="btn-1 font-semibold text-[17px]">
+            Assessment
+          </button>
         </Link>
       </div>
 
@@ -99,23 +101,21 @@ function Home() {
               </div>
             </div>
           </div>
-          <h3>Features</h3>
         </div>
-        
       </section>
 
       <section class="quote-section">
         <div className="quote-text">
-        <h3 class="text-center font-semibold text-[19px]">
-          “Wellness encompasses a healthy body, a sound mind, and a tranquil
-          spirit.
-        </h3>
-        <h3 class="text-center font-semibold text-[19px]">
-          Enjoy the journey as you strive for wellness.”
-        </h3>
-        <h3 class="text-center font-semibold text-[18px] text-teal-800">
-           - Laurette Gagnon Beaulieu
-        </h3>
+          <h3 class="text-center font-semibold text-[19px]">
+            “Wellness encompasses a healthy body, a sound mind, and a tranquil
+            spirit.
+          </h3>
+          <h3 class="text-center font-semibold text-[19px]">
+            Enjoy the journey as you strive for wellness.”
+          </h3>
+          <h3 class="text-center font-semibold text-[18px] text-teal-800">
+            - Laurette Gagnon Beaulieu
+          </h3>
         </div>
       </section>
     </div>

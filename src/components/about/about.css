@@ -1,72 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Philosopher:ital,wght@0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Poppins:wght@300;400;500&family=Raleway:wght@700;900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Philosopher:ital,wght@0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Poppins:wght@300;400;500&family=Raleway:wght@700;900&display=swap");
 
 .AboutTitle {
-
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #244c4eff;
 }
-
-
-.About {
-
-    color: blue;
-
-}
-
 
 .h1-about {
-    font-family: "Raleway", sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    color: #244C4Eff;
-
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #244c4eff;
 }
 
 .h2-about {
-    font-family: "Raleway", sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    color: #244C4Eff;
-
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #244c4eff;
 }
 
 .grid {
-
-    font-size: 16px;
-    line-height: 25px;
-    color: black;
-    background-color: rgb(225, 221, 221);
-    font-weight: 500;
-    font-family: "Poppin, sans-serif"; 
-    border: none;
-    margin-bottom: 15px;
-
-}
-
-.Mylady1 {
-    border-radius: 8px;
-
-}
-
-
-.Mylady2 {
-    border-radius: 100px;
-
-}
-
-
-.Mylady3 {
-
-    border-radius: 80px;
-
-}
-
-
-.ManImage {
-    border-radius: 8px;
-
+  font-size: 16px;
+  line-height: 25px;
+  color: black;
+  font-weight: 500;
+  font-family: "Poppin, sans-serif";
+  border: none;
+  margin-bottom: 3rem;
 }
