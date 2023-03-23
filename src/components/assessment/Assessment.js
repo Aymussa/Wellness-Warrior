@@ -11,8 +11,8 @@ const Assessment = () => {
   // Questions
   const questions = [
     {
-      question: 'Q1: How are you feeling overall?',
-      choices: ["I'm feeling okay", "I'm not doing so well", "I'm feeling a bit stressed/tired/anxious"]
+      question: 'Q1: Are you feeling well overall?',
+      choices: ["No", "Maybe", "Unsure", "Yes"]
     },
     {
       question: 'Q2: Have you been experiencing any changes in your mood or behavior recently?',
@@ -76,13 +76,13 @@ const handleSubmit = (event) => {
   // 
   Object.values(selections).forEach((choice, i) => {
     console.log(choice);
-    if (choice === "Yes") {
+    if (choice === "No") {
       score += 1;
-    } else if (choice === "No") {
+    } else if (choice === "Unsure") {
       score += 2;
     } else if (choice === "Maybe") {
       score += 3;
-    } else if (choice === "I dont know") {
+    } else if (choice === "Yes") {
       score += 4;
     }
   });
