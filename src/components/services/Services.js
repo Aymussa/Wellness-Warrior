@@ -1,23 +1,55 @@
 import React from "react";
+import './services.css';
+let testimonialsImage1 = "/images/testimonial-1.jpg";
+let testimonialsImage2 = "/images/testimonial-2.jpg";
+let testimonialsImage3 = "/images/testimonial-3.jpg";
+let testimonialsImage4 = "/images/testimonial-4.jpg";
 
 
 function Services() {
   return (
-    <div className="pt-24">
-      <h1>Services</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula. Curabitur pellentesque
-        turpis sit amet eros iaculis, a mollis arcu dictum. Ut vel ante eget massa ornare placerat.
-        Etiam nisl orci, finibus sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum
-        nunc, sed pretium risus rutrum eget. Nam consequat, ligula in faucibus vestibulum, nisi
-        justo laoreet risus, luctus luctus mi lacus sit amet libero. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Mauris pretium condimentum
-        tellus eget lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec
-        placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum in velit pellentesque
-        vehicula sit amet at augue. Maecenas aliquam bibendum congue. Pellentesque semper, lectus
-        non ullamcorper iaculis, est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+    <div >
+      <h1 className="h1-services">Welcome to our Services</h1>
+      <p className="p-services">This Wellness Warrior app is designed to provide you with a variety of services to help you improve your overall health and well-being. Our services include:</p>
+      <div ClassName="ul-services">
+        <ul  >
+          <li>Lifestyle coaching: Our lifestyle coaches provide guidance and support to help you make positive changes in your daily routine, including improving sleep habits, managing stress, and establishing healthy routines.</li>
+          <li>Health diet planning: Our nutritionists will work with you to create a customised meal plan based on your goals and preferences. We also offer a recipe library with healthy and delicious options.</li>
+          <li>Exercise and yoga: Our app offers a range of exercise and yoga routines, from gentle stretching to high-intensity workouts. Instructors provide step-by-step guidance to help you get the most out of your practice.</li>
+          <li>Breathing techniques: Our app features a variety of breathing exercises to help you reduce stress and improve focus. Instructors will guide you through different techniques such as deep breathing and alternate nostril breathing.</li>
+          <li>Meditation: Our meditation sessions are designed to help you relax and reduce stress. We offer guided meditations for beginners, as well as more advanced options for those with more experience.</li>
+          <li>Mindfulness: Our app offers daily mindfulness exercises to help you stay present and focused throughout the day.</li>
+          <li>Sleep coaching: Our sleep coaches provide tips and guidance to help you establish healthy sleep habits and improve the quality of your sleep.</li>
+        </ul>
+        <p className="p-services"> We are constantly adding new services and features to our app, so be sure to check back often!</p>
+      </div>
+      <h2 className="p-services" >Testimonials:</h2>
+      <div class="testimonials">
+        <ul>
+          <li>
+            <img src={process.env.PUBLIC_URL + testimonialsImage1} alt="testimonials1"></img>
+            <p>"Recommended for those seeking to improve mental wellness, mindfulness, and lifestyle. As someone who sits at a desk a lot, I struggled with back pain and poor posture. Since using Wellness Warrior, my posture and comfort have greatly improved"</p>
+            <h1>Michelangelo di Lodovico</h1>
+          </li>
+          <li>
+            <img src={process.env.PUBLIC_URL + testimonialsImage2} alt="testimonials2"></img>
+            <p>"Using the Wellness Warrior App improved my mental health significantly. Its guided meditations, mindfulness exercises, and daily journal prompts helped me manage anxiety and identify patterns in my thoughts and behaviors.. Overall, this app has been a lifesaver for me."</p>
+            <h1>Michael Jordan</h1>
+          </li>
+          <li>
+            <img src={process.env.PUBLIC_URL + testimonialsImage3} alt="testimonials3"></img>
+            <p>"I have been using the Wellness Warrior App for the past few weeks and I have noticed a significant improvement in my overall health and wellbeing. The app is easy to use and the features are very helpful. I would highly recommend this app to anyone looking to improve their wellbeing."</p>
+            <h1>Lara Croft</h1>
+          </li>
+          <li>
+            <img src={process.env.PUBLIC_URL + testimonialsImage4} alt="testimonials4"></img>
+            <p>"i use the Wellness Warrior app for improving my diet and lifestyle. The meal planner and daily reminders have helped me stay on track with healthy eating and exercise. While it could use more variety in recipes, it's still a valuable tool for making healthier choices"</p>
+            <h1>Anne Robinson</h1>
+          </li>
+        </ul>
+      </div>
     </div>
+
   );
 }
 
