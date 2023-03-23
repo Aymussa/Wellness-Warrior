@@ -11,40 +11,40 @@ const Assessment = () => {
   // Questions
   const questions = [
     {
-      question: 'Q1: Are you feeling well overall?',
-      choices: ["No", "Maybe", "Unsure", "Yes"]
+      question: 'Q1: Are you feeling unwell overall?',
+      choices: ["Yes", "Maybe", "Unsure", "No"]
     },
     {
       question: 'Q2: Have you been experiencing any changes in your mood or behavior recently?',
-      choices: ["I dont know", 'Maybe', 'Yes', 'No']
+      choices: ["Yes", "Maybe", "Unsure", "No"]
     },
     {
       question: 'Q3: Have you been feeling particularly stressed or anxious lately?',
-      choices: ['Sometimes', 'No', 'Yes']
+      choices: ["Yes", "Maybe", "Unsure", "No"]
     },
     {
       question: 'Q4: Are you having any trouble sleeping or experiencing changes in your sleep patterns?',
-      choices: ['Sometimes', 'No', 'Yes']
+      choices: ["Yes", "Maybe", "Unsure", "No"]
     },
     {
       question: 'Q5: Have you been feeling tired or fatigued lately?',
-      choices: ['Sometimes', 'No', 'Yes']
+      choices: ["Yes", "Maybe", "Unsure", "No"]
     },
     {
       question: 'Q6: Have you noticed any changes in your appetite or weight?',
-      choices: ['I dont know', 'No', 'Yes']
+      choices: ["Yes", "Maybe", "Unsure", "No"]
     },
     {
       question: 'Q7: Have you been experiencing any physical symptoms that might be related to your mental health, such as headaches or stomach aches?',
-      choices: ['Not Sure', 'No', 'Yes']
+      choices: ["Yes", "Maybe", "Unsure", "No"]
     },
     {
       question: 'Q8: Have you been feeling particularly stressed or anxious lately?',
-      choices: ['Sometimes', 'No', 'Yes']
+      choices: ["Yes", "Maybe", "Unsure", "No"]
     },
     {
       question: 'Q9: Have you been experiencing any difficulties with relationships or interpersonal communication?',
-      choices: ['Not Sure', 'No', 'Yes']
+      choices: ["Yes", "Maybe", "Unsure", "No"]
     },
     {
       question: 'Q10:  Have you been using any substances to cope with your emotions or mental health?',
@@ -93,15 +93,20 @@ const handleSubmit = (event) => {
 const adviceCard = [
   {
     score: 10,
-    text: 'Advice for total score of 10'
-  },
+    // 'Advice for total score of 10'
+    text:  'Please try out our Pilate, meditation, Mindfulness Exercise, heathly eating and Yoga classes to help maintain a healthy life style',
+  }
+  ,
   {
+    // 'Advice for total score of 30'
     score: 30,
-    text: 'Advice for total score of 30'
+    
+    text: 'I recommend our Pilate, meditation, Mindfulness Exercise, healthy advice and Yoga classes to help maintain your wellbeing. With regular Heartfulness Meditation, your mind will become centered and shift to deeper levels of feeling, intuition and consciousness.',
   },
   {
+    // Advice for total score of 50
     score: 50,
-    text: 'Advice for total score of 50'
+    text: ' Please ensure you seek advice from your GP or the Mental Health service. Ensure you call 999 if you feel suicidal or illusional'
   }
   // Check if the result of find() is null or undefined and then return an empty string
 ].find((advice) => score <= advice.score)?.text ?? '';
@@ -143,8 +148,8 @@ return (
     {/* If totalScore is greater than 0, then return the number of score and advice */}
     {totalScore > 0 && (
       <div>
-        <p>Total score: {totalScore}</p>
-        <p>{advice}</p>
+        <p className='font-semibold'>Total score: {totalScore}</p>
+        <p className='mb-12 font-semibold text-red-500'>{advice}</p>
       </div>
     )}
   </div>
