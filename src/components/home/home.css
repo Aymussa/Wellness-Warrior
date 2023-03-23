@@ -25,37 +25,17 @@
 }
 
 .btn-1 {
-  width: 100px;
-  height: 40px;
+  width: 120px;
   line-height: 42px;
-  padding: 10px;
+  
   border: none;
   background-color: rgb(255, 255, 255);
+  border-radius: 4px;
 }
 
-.btn-1:before,
-.btn-1:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 2px;
-  width: 0;
-  background: #a7f009;
-  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
-    4px 4px 5px 0px #0002;
-  transition: 400ms ease all;
-}
-.btn-1:after {
-  right: inherit;
-  top: inherit;
-  left: 0;
-  bottom: 0;
-}
-.btn-1:hover:before,
-.btn-1:hover:after {
-  width: 100%;
-  transition: 800ms ease all;
+.bnt-1:hover {
+  background-color:rgb(55, 206, 226);
+  color: #fff;
 }
 
 .h2-subtitle {

@@ -76,7 +76,7 @@ const handleSubmit = (event) => {
   // 
   Object.values(selections).forEach((choice, i) => {
     console.log(choice);
-    if (choice === questions[i].choices.indexOf(choice)) {
+    if (choice === "Yes") {
       score += 1;
     } else if (choice === "No") {
       score += 2;
@@ -115,11 +115,13 @@ console.log(totalScore)
 
 // renders a form with a list of questions and checkboxes for each question
 return (
-  <div className='assessment-pg h-full pt-30'>
+  <div className='assessment-pg pt-20'>
+    <div className="pt-20 pl-14">
+    <h1 className="assessH1 mb-6">Assessment</h1>
     <form onSubmit={handleSubmit}>
       {questions.map((question) => (
         <div key={question.question}>
-          <h3>{question.question}</h3>
+          <h3 className="font-semibold text-[19px]">{question.question}</h3>
           {question.choices.map((choice) => (
             <div key={choice}>
               <label>
@@ -136,7 +138,7 @@ return (
           ))}
         </div>
       ))}
-      <button type="submit">Submit</button>
+      <button className="bnt2 font-semibold text-[19px] text-black mb-4 mt-4" type="submit">Submit</button>
     </form>
     {/* If totalScore is greater than 0, then return the number of score and advice */}
     {totalScore > 0 && (
@@ -145,6 +147,7 @@ return (
         <p>{advice}</p>
       </div>
     )}
+  </div>
   </div>
 );
 };
