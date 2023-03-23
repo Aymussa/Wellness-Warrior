@@ -9,9 +9,9 @@ function Home() {
   return (
     <div className="home pt-24">
       <div className="jumbotron"></div>
-      <div className="home-content pt-40 container mx-auto absolute inset-8 text-left">
-        <h1 className="h1-home lg:text-[85px] text-white">
-          <span className="h1-span">Wellness</span> <br /> Warrior
+      <div className="home-content pt-36 container mx-auto absolute inset-8 text-left">
+        <h1 className="h1-home text-[85px] text-white">
+          Wellness <br /> Warrior
         </h1>
         <p className="p-home  text-white mb-6">
           We're here to help you improve your physical fitness, manage stress

@@ -1,5 +1,6 @@
 import React from "react";
 import './services.css';
+import PlaceApi from "../PlaceApi"
 let testimonialsImage1 = "/images/testimonial-1.jpg";
 let testimonialsImage2 = "/images/testimonial-2.jpg";
 let testimonialsImage3 = "/images/testimonial-3.jpg";
@@ -23,10 +24,16 @@ function Services() {
         </ul>
         <p className="p-services"> We are constantly adding new services and features to our app, so be sure to check back often!</p>
       </div>
-      <h2 className="p-services" >Testimonials:</h2>
+      <h1 className="formH1 font-semibold text-[19px] text-center pt-6">Find a place to workout!</h1>
+      <p className="text-center pt-2 ">To improve your physical health, utilize the form below to explore various types of fitness
+       options nearby your chosen location.</p>
+      <section className="pt-6 pl-7">
+      <PlaceApi></PlaceApi>
+      </section>
+      <h2 className="p-services font-semibold text-[18px]" >Testimonials:</h2>
       <div class="testimonials">
         <ul>
-          <li>
+          <li className="">
             <img src={process.env.PUBLIC_URL + testimonialsImage1} alt="testimonials1"></img>
             <p>"Recommended for those seeking to improve mental wellness, mindfulness, and lifestyle. As someone who sits at a desk a lot, I struggled with back pain and poor posture. Since using Wellness Warrior, my posture and comfort have greatly improved"</p>
             <h1>Michelangelo di Lodovico</h1>

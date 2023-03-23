@@ -1,22 +1,19 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Philosopher:ital,wght@0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Poppins:wght@300;400;500&family=Raleway:wght@700;900&display=swap');
+
   
   .h1-services {
     max-width: 1500px;
     padding-top: 10rem;
     text-align:center;
     font-family: "Raleway", sans-serif;
+    font-size: 40px;
     font-weight: 900;
-    font-size: 22px;
+    color: #244C4Eff;
   }
   
 
   .p-services {
-
-    padding-top: 5rem;
+    padding-top: 3rem;
     text-align: center;
   }
   
@@ -36,6 +33,7 @@
 	display: block;
 	width: 100%;
 	min-height: 250px;
+	padding-bottom: 3rem;
 }
 
 .testimonials ul {
@@ -86,13 +84,21 @@
 }
 
 .testimonials li:hover {
-	background-color: #212121;
+	background-color: black;
 	color: #fff;
 }
 
 .testimonials li:hover img {
 	box-shadow: 0px 0px 0px 2px #fff;
 }
+
+label{
+	color: darkcyan;
+	font-weight: 500;
+}
+
+
+  
 
 @media only screen and (max-width: 860px) {
 	.testimonials li {
