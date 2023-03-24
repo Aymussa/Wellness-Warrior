@@ -1,4 +1,7 @@
-## Wellness Warrior🧘‍♀️
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# <h1 align="center">**Wellness Warrior**🧘‍♀️</h1>
+
+<br>
 
 # Table of contents
 - [Overview](#overview)
@@ -15,15 +18,22 @@
 
 ## Overview
 
-Wellness Warrior is designed to help users cope with stress, anxiety, depression, and other mental health conditions. It takes you to an assessment page where you have to fill out a questionnaire session,based on the input it calculates the severity of the well-being and redirects to the required services.Services include expert advice,counselling,journals ,advices on proper diet ,importance of physical activities. Overall, Wellness Warrior can be a powerful tool for individuals looking to manage their mental health and improve their overall well-being. It can provide a range of resources and support to help users navigate the challenges of living with a mental health condition.
+Wellness Warrior is designed to help users cope with stress, anxiety, depression, and other mental health conditions through an assessment questionnaire. Based on the input, the app calculates the severity of the user's mental health condition and provides advice on support services available to them.
+
+<br>
+
+Another useful feature of the app is its place finder tool. Users can search for nearby fitness centers such as gyms, yoga studios, and running tracks. The app will return the fitness centers and their addresses, making it easy for users to access exercise facilities that can improve their mental and physical health.
+
+<br>
+
+
 
 ### Objective
-
-Our objective was to work together as a team to develop this web application, starting from the idea phase and continuing through to deployment. Our goal was to ensure that we had a minimum viable product that was ready for release.
+As a team, we aimed to develop a wellness app that catered to individuals seeking to manage their mental health and improve their overall well-being. Our approach involved ideating, collaborating, and executing the application's development, right from its initial phase to deployment. Our end objective was to deliver a minimum viable product that met the requirements for release
 
 ### Screenshot
 
-![Screenshot of the website](./public/images/Wellness-Warrior.jpg)
+![Screenshot of the website](./src/components/images/wellnessW.png)
 
 ### Links
 
@@ -32,34 +42,36 @@ Our objective was to work together as a team to develop this web application, st
 
 ## Our process
 
-We were required to find new technology and incorporate it in our ReactJS app. Numerous efforts were made with various concepts before we settled on Mental wellness and the importance of maintaining a healthy wellbeing.
+As a team, we collaborated to generate and exchange ideas, taking notes and developing wireframes using Figma to outline the design of our web application. To manage the project, we utilized GitHub Projects and Kanban boards to delegate tasks and track progress.
 
 
 ### Technologies Used
 
-+ ReactJS
-+ Tailwind
-+ CSS
-+ HTML5
-+ API
-+ NodeJs
-+ Bootstrap
-+ Google Slides
-+ Figma (Wireframing)
-+ Netlify (Deployment)
-+ Git 
-+ GitHub
+- [x] React.JS
+- [x] React Hooks
+- [x] Tailwind
+- [x] CSS
+- [x] HTML5
+- [x] API
+- [x] NodeJs
+- [x] jQuery
+- [x] Google Slides
+- [x] Figma (Wireframing)
+- [x] Netlify (Deployment)
+- [x] Git 
+- [x] GitHub
 
 ### What we learned
 
-For the most part the newest part of building this page was learning to work in a team, take on smaller pieces of the whole, the process of give and take, as well as learning new aspects of GitHub - project side, the board, switching branches, pushing to main and accepting other team members pull requests.
+At first, getting accustomed to React and its components proved to be challenging for us. Also, incorporating other technologies such as Tailwind CSS and styling the webpage according to our preferences was also a struggle yet an enjoyable experience.
 
-We've also learned the importance of collaborative learning and sharing of ideas to foster creativity. Through this process, we have challenged ourselves to learn new technology Tailwind and implement it into React app.We have also used an API to retrieve data.Deploying the application in Netlify was another skill we have mastered.
+<br>
+
+Throughout this process, we also enhanced our teamwork skills, making sure that every member made valuable contributions, and that our ideas were effectively translated into the application.
 
 ### Usage
 
-Wellness Warrior will take you to a user-friendly app where  you can take control of your well-being. We created a quick 10 question assessment with lifestyle support to help users improve their overall well-being and feel their best. 
-Answer those 10 questions and it will get you advice according to the severity.It navigates you through certain journals on how to maintain the wellbeing.
+Wellness Warrior will take you to a user-friendly app where you can take control of your well-being. We have created a quick 10-question assessment with lifestyle support to help users improve their overall well-being and feel their best. Answering those 10 questions will provide you with advice based on the severity of your responses. It will provide you with resources to help you maintain a positive wellbeing.
 
 
 ### Future Development Ideas
@@ -68,8 +80,7 @@ Answer those 10 questions and it will get you advice according to the severity.I
 
 + Integrate more features for personalized well-being plans based on the user's assessment results
 + Incorporate machine learning algorithms to provide more accurate assessment results and personalized recommendations
-+ Partner with mental health professionals and organizations to offer additional resources and support for users
-+ Implement a community forum or support group feature to connect users with others who are also dealing with mental health conditions
++ Implement a community forum or support group feature to connect users with others who are also dealing with mental health conditions.
 + Add more educational resources on mental health and wellbeing, such as podcasts, videos, blogs and articles.
 + Allow users to create an account so that they can login and access whenever required
 
@@ -88,4 +99,14 @@ Answer those 10 questions and it will get you advice according to the severity.I
   - GitHub - [LalyFiroze](https://github.com/LalyF)
 
 ### Credits
++ Tailwind CSS Documentation
++ npm Documentation
++ AdobeStock Images
++ Google Fonts
++ Foursquare Places API
++ Pexels: [Photo by Gustavo Fring](https://www.pexels.com/photo/group-of-young-pregnant-women-meditating-in-spacious-studio-3984341/)
+
+
+
+
 
