@@ -129,12 +129,16 @@ label {
 }
 
 @media only screen and (max-width: 750px) {
-  .container {
-    width: 90%;
+  .testimonials {
+   display: none;
   }
-}
+  .finder-p {
+    font-size: 12px;
+  }
+  }
 
-.container h1,
+
+/* .container h1,
 h2,
 h3 {
   margin-top: 15px;
@@ -145,4 +149,4 @@ h3 {
 .container span {
   color: #757575;
   font-weight: 600;
-}
+} */

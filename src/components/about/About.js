@@ -57,7 +57,7 @@ function About() {
 
       {/* meet the team section */}
 
-      <div className="grid grid-cols-4 gap-4">
+      <div className="team-grid grid grid-cols-4 gap-4">
         <div className="border border-gray-500 p-4 Ahmed">
           <h1 className="font-semibold">Ahmed</h1>
 

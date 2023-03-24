@@ -46,13 +46,13 @@ function PlaceFinder() {
 
   // Rendering the component to HTML format
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center ">
       <div className="place-form w-2/3 border rounded-sm shadow-sm p-4 flex items-center justify-between">
         <div>
           <form onSubmit={handlePlaceFinder}>
             <label htmlFor="city">City:</label>
             <input
-              className="block w-64 border border-gray-300 rounded-sm py-2 px-3 mt-1"
+              className="block w-56 border border-gray-300 rounded-sm py-2 px-3 mt-1"
               type="text"
               id="city"
               value={city}
@@ -60,7 +60,7 @@ function PlaceFinder() {
             />
             <label htmlFor="select">Fitness Type:</label>
             <select
-              className="block w-64 border border-gray-300 rounded-sm py-2 px-3 mt-1"
+              className=" block w-56 border border-gray-300 rounded-sm py-2 px-3 mt-1"
               id="select"
               value={select}
               onChange={(event) => setSelect(event.target.value)}>

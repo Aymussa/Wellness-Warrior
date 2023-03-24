@@ -155,3 +155,30 @@ filter: saturate(130%);
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
+
+@media only screen and (max-width: 750px) {
+  h1.h1-home{
+    font-size: 70px;
+  }
+  .p-home{
+    font-size: 12px;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    overflow: hidden;
+  }
+  p.p-home1{
+    font-size: 12px;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    overflow: hidden;
+  }
+  .quote-text{
+    display: none;
+  }
+  .blog.section{
+    display: none;
+  }
+  .quote-section{
+    display: none;
+  }
+}
