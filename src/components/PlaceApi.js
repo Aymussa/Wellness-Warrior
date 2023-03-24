@@ -47,7 +47,7 @@ function PlaceFinder() {
   // Rendering the component to HTML format
   return (
     <div className="flex justify-center">
-      <div className="place-form w-2/3 bg-gray-100 border rounded-sm shadow-sm p-4 flex items-center justify-between">
+      <div className="place-form w-2/3 border rounded-sm shadow-sm p-4 flex items-center justify-between">
         <div>
           <form onSubmit={handlePlaceFinder}>
             <label htmlFor="city">City:</label>

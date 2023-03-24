@@ -2,10 +2,10 @@ import React from "react";
 // import ReactDOM from 'react-dom';
 // import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 import "./about.css";
-let man1 = "/images/man1.jpg";
-let lady1 = "/images/lady1.jpg";
-let lady2 = "/images/lady2.jpg";
-let lady3 = "/images/lady3.jpg";
+import man1 from "../images/man1.jpg";
+import lady1 from "../images/lady1.jpg";
+import lady2 from "../images/lady2.jpg";
+import lady3 from "../images/lady3.jpg";
 
 function About() {
   return (

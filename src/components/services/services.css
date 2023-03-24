@@ -102,6 +102,10 @@ label {
   display: fixed;
 }
 
+.place-form{
+  background-color: whitesmoke;
+}
+
 @media only screen and (max-width: 860px) {
   .testimonials li {
     width: 70%;
