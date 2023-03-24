@@ -1,10 +1,10 @@
 import React from "react";
 import "./services.css";
 import PlaceApi from "../PlaceApi";
-let testimonialsImage1 = "/images/testimonial-1.jpg";
-let testimonialsImage2 = "/images/testimonial-2.jpg";
-let testimonialsImage3 = "/images/testimonial-3.jpg";
-let testimonialsImage4 = "/images/testimonial-4.jpg";
+import testimonialsImage1 from "../images/testimonial-1.jpg";
+import testimonialsImage2 from "../images/testimonial-2.jpg";
+import testimonialsImage3 from "../images/testimonial-3.jpg";
+import testimonialsImage4 from "../images/testimonial-4.jpg";
 
 function Services() {
   return (
@@ -55,16 +55,6 @@ function Services() {
             meditation sessions are designed to help you relax and reduce
             stress. We offer guided meditations for beginners, as well as more
             advanced options for those with more experience.
-          </li>
-          <li className="mb-3">
-            <span className="font-semibold text-teal-600">Mindfulness:</span>{" "}
-            Our app offers daily mindfulness exercises to help you stay present
-            and focused throughout the day.
-          </li>
-          <li>
-            <span className="font-semibold text-teal-600">Sleep coaching:</span>{" "}
-            Our sleep coaches provide tips and guidance to help you establish
-            healthy sleep habits and improve the quality of your sleep.
           </li>
         </ul>
         <p className="p-services font-bold text-center mb-12">
