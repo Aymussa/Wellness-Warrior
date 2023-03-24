@@ -50,7 +50,7 @@ As a team, we collaborated to generate and exchange ideas, taking notes and deve
 - [x] React.JS
 - [x] React Hooks
 - [x] Tailwind
-- [x]CSS
+- [x] CSS
 - [x] HTML5
 - [x] API
 - [x] NodeJs
