@@ -67,7 +67,7 @@ function Services() {
       <h1 className="formH1 font-semibold text-[25px] text-center pt-8">
         Find a place to workout!
       </h1>
-      <p className="text-center pt-2 mb-4">
+      <p className="finder-p text-center pt-2 mb-4">
         To improve your physical health, utilize the form below to explore
         various types of fitness options nearby your chosen location.
       </p>
