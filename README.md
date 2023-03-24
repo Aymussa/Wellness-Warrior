@@ -39,6 +39,8 @@ We were required to find new technology and incorporate it in our ReactJS app. N
 
 + ReactJS
 + Tailwind
++ CSS
++ HTML5
 + API
 + NodeJs
 + Bootstrap
@@ -69,6 +71,7 @@ Answer those 10 questions and it will get you advice according to the severity.I
 + Partner with mental health professionals and organizations to offer additional resources and support for users
 + Implement a community forum or support group feature to connect users with others who are also dealing with mental health conditions
 + Add more educational resources on mental health and wellbeing, such as podcasts, videos, blogs and articles.
++ Allow users to create an account so that they can login and access whenever required
 
 ### Author
 
