@@ -118,7 +118,7 @@ filter: saturate(130%);
 .blog .blog-item-inner .blog-info .blog-title {
   font-size: 18px;
   font-weight: 700;
-  color: #302e4d;
+  color: #000000;
   text-transform: capitalize;
   margin-bottom: 10px;
 }
@@ -132,7 +132,7 @@ filter: saturate(130%);
 .blog .blog-item-inner .blog-info .blog-tags {
   font-size: 14px;
   line-height: 25px;
-  color: #504e70;
+  color: #000000;
   font-weight: 400;
   text-transform: capitalize;
 }

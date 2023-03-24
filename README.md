@@ -23,7 +23,7 @@ Our objective was to work together as a team to develop this web application, st
 
 ### Screenshot
 
-![Screenshot of the website](./public/images/Wellness-Warrior.jpg)
+![Screenshot of the website](./src/components/images/Wellness-Warrior.jpg)
 
 ### Links
 

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import Logo from "./images/logo.png";
 
 function NavBar() {
@@ -10,7 +10,7 @@ function NavBar() {
   }
 
   return (
-    <header className="fixed w-full px-4 lg:px-100 z-30 lg:h-140 flex items-center bg-white">
+    <header className="sticky top-0 w-full px-4 lg:px-100 z-[99] lg:h-140 flex items-center">
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         <img
           src={process.env.PUBLIC_URL + Logo}
@@ -24,9 +24,8 @@ function NavBar() {
               to="/"
               end
               className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
-              }
-            >
+                isActive ? "nav-link active" : "nav-link"
+              }>
               Home
             </NavLink>
           </li>
@@ -34,33 +33,32 @@ function NavBar() {
             <NavLink
               to="about"
               className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
-              }
-            >
+                isActive ? "nav-link active" : "nav-link"
+              }>
               About
             </NavLink>
           </li>
-          <li className="nav-item" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+          <li
+            className="nav-item"
+            onMouseEnter={toggleDropdown}
+            onMouseLeave={toggleDropdown}>
             <NavLink
               to="services"
               className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
+                isActive ? "nav-link active" : "nav-link"
               }>
               Services
             </NavLink>
             {isDropdownOpen && (
-              
-                <li className='nav-sub'>
-                  <NavLink
-                    to="/assessment"
-                    className={({ isActive }) =>
-                      isActive ? 'nav-link active' : 'nav-link'
-                    }
-                  >
-                    Assessment
-                  </NavLink>
-                </li>
-              
+              <li className="nav-sub">
+                <NavLink
+                  to="/assessment"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }>
+                  Assessment
+                </NavLink>
+              </li>
             )}
           </li>
           <li className="nav-item">
@@ -68,15 +66,12 @@ function NavBar() {
               to="contact"
               end
               className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
-              }
-            >
+                isActive ? "nav-link active" : "nav-link"
+              }>
               Contact
             </NavLink>
           </li>
         </ul>
-
-
       </div>
     </header>
   );

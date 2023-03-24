@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Philosopher:ital,wght@0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Poppins:wght@300;400;500&family=Raleway:wght@700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Philosopher:ital,wght@0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Poppins:wght@300;400;500&family=Raleway:wght@700;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -16,7 +16,8 @@ body {
 
 /* Home background image */
 .jumbotron {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./components/images/bg4.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./components/images/bg4.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
@@ -27,18 +28,19 @@ body {
 }
 
 /* Header Styling */
-header{
+header {
   padding-top: 1rem;
   height: 7.6rem;
+  background-color: #244c4eff;
 }
 
 /* Navlink Font Styling */
-.nav-link{
+.nav-link {
   font-weight: 500;
   font-size: 18px;
 }
 
- /* Navlink Underline Effect */
+/* Navlink Underline Effect */
 .nav-link:hover:after {
   content: "";
   display: block;
@@ -47,17 +49,9 @@ header{
   background-color: #219ebc;
   margin-top: 5px;
 }
-/* Navlink Font Styling */
-.nav-sub{
-  font-weight: 500;
-  font-size: 18px;
-  position: fixed;
-
-}
-
 /* NavItem Font Styling */
-.nav-item{
+.nav-item {
   font-weight: 500;
   font-size: 18px;
- }
-
+  color: white;
+}
